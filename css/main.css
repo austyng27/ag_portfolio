@@ -94,6 +94,7 @@ font-family: 'Lexend Tera', sans-serif; */
 html {
   font-size: 16px;
 }
+
 body {
   background: #F7E8E8;
   font-family: 'Lekton', sans-serif;
@@ -103,83 +104,110 @@ body {
 .content-wrapper {
   max-width: 1200px;
   width: 90%;
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 h1 {
   font-weight: 700;
-	font-size: 1.875em;
+  font-size: 1.875em;
 }
 
 h2 {
+  color:#CAC691;
   font-weight: 400;
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
-	font-size: 1.25em;
+  color:#CAC691;
+  font-size: 1.25em;
 }
-/*
+
+
 h4 {
+  color: #CAC691;
 	font-size: .75em;
 }
 
 p {
+  color:#CAC691;
 	font-size: 1rem;
 	line-height: 36px; 
-} */
+}
 /* ---------------------------- Mobile Styles -----------------------*/
 
 /*---Header Styles ----*/
 header {
+  width: 100%;
   display: flex;
-	justify-content: center;
-	text-align: center;
+  justify-content: center;
+  text-align: center;
   background: #152A3E;
   color: #EEEFDA;
 }
 
+header .content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*background: blue;*/
+}
 
 header nav {
   width: 100%;
   padding: 1.875em 0;
+  /*background: yellow;*/
 }
 
-header nav ul{
+header nav ul {
+  width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 0 1.875em;
   padding: 0;
   list-style: none;
-  
+  /*background: lightpink;*/
+
 }
 
 header nav ul li {
-	font-size: 1.875em;
-  font-weight: 400;
-  padding: 0 1.25rem;
-	text-transform: capitalize;
+  width: 90%;
+  /*background: lightgreen;*/
 }
 
 
 header nav ul li a {
-    text-decoration: none;
-    color: #EEEFDA;
+  padding: 0 20px;
+  font-size: 1.125em;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #EEEFDA;
+  /*background: hotpink;*/
+}
+
+#contact-button {
+  background-color: #CAC691;
+  padding: .75em .75em;
+  border-radius: 30px;
+  color:#152A3E;
 }
 
 header h1 {
   width: 100%;
   font-family: 'Lexend Tera', sans-serif;
   font-size: 4.5em;
-  color:#EEEFDA;
+  color: #EEEFDA;
 }
 
 header h2 {
   width: 100%;
-  font-family: 'Lekton', sans-serif;;
+  font-family: 'Lekton', sans-serif;
+  ;
   font-size: 3.75em;
   color: #EEEFDA;
 }
@@ -195,12 +223,20 @@ header h2 {
   /*background: red;*/
 }
 
-#projects h2{
+#projects h2 {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: pink;*/
+  color: #152A3E;
+}
+
+#projects h4 {
+  color: #152A3E;
+}
+
+#projects p {
+  color: #152A3E;
 }
 
 #projects .content-wrapper .showcase {
@@ -212,7 +248,7 @@ header h2 {
   /*background: yellow;*/
 }
 
-#projects .content-wrapper .showcase article{
+#projects .content-wrapper .showcase article {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -223,18 +259,294 @@ header h2 {
   /*background: green;*/
 }
 
-#projects .content-wrapper .showcase article img{
+#projects .content-wrapper .showcase article img {
   margin: 20px;
 }
 
+.skills-bold {
+  font-weight: 700;
+  padding: 5px;
+}
 
-/*----- Footer Styles ------*/
-#contact {
+#skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  padding: 60px 0 80px 0;
   background: #152A3E;
-  color:#EEEFDA;
+}
+
+#skills .content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: green;*/
+}
+
+#skills h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  font-size: 3em;
+  color: #CAC691;
+}
+
+#skills h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  color: #CAC691;
+  font-size: 2rem;
+}
+
+#skills .content-wrapper .skill-list article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: blue;*/
+  color: #152A3E;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 
+#skills .content-wrapper .tool-list article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: blue;*/
+  color: #152A3E;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.tech-box {
+  width: 90%;
+  background: #F7E8E8;
+  padding: 20px 100px;
+  margin: 0 0 20px 0;
+}
+
+#about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #F7E8E8;
+  padding: 80px 0;
+}
+
+#about .content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*background: white;*/
+}
+
+.author-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: green;*/
+}
+
+.author-info h2 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  color:#152A3E;
+  /*background: blue;*/
+}
+
+.author-info h3 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  color:#152A3E;
+  /*background: yellow;*/
+}
+
+.info-paragraph {
+  width: 90%;
+  margin: 0 0 30px 0;
+  padding: 0 0 0 10px;
+  display: block;
+  text-align: left;
+  /*background: yellow;*/
+}
+
+.info-paragraph p {
+  color: #152A3E;
+}
+
+.work-together {
+  font-weight: 700;
+}
+
+/*----- Footer Styles ------*/
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0 60px 0;
+  background: #152A3E;
+}
+
+#contact .content-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  padding: 0 0 60px 0;
+  /*background: lightgreen;*/
+}
+
+#contact h2 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*background: yellow;*/
+}
+
+.connect-with-me {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: darkblue;*/
+}
+
+.contact-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: green;*/
+}
+
+.hire-me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: white;*/
+}
+
+.contact-info p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: yellow;*/
+}
+
+.social-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: hotpink;*/
+}
+
+.follow-me {
+  width: 100%;
+  /*background: lightgrey;*/
+}
+
+.social-icons {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*background: lightskyblue;*/
+}
+
+.social-icons ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  /*background: lightsalmon;*/
+}
+
+.social-icons ul li {
+  width: 100%;
+  /*background: lightgreen;*/
+}
+
+.location {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: plum;*/
+}
+
+.meet-me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: lightseagreen;*/
+}
+
+.city {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: white;*/
+}
+
+.city p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: yellow;*/
+}
+
+.copywrite {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  margin: 60px 0 0 0;
+  /*background: purple;*/
+}
 
 /* ==========================================================================
    Helper classes
@@ -329,9 +641,9 @@ header h2 {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -342,6 +654,7 @@ header h2 {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -409,4 +722,3 @@ header h2 {
     page-break-after: avoid;
   }
 }
-
