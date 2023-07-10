@@ -14,7 +14,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
+  /*line-height: 1.4;*/
 }
 
 /*
@@ -110,31 +110,40 @@ body {
 }
 
 h1 {
+  font-family: 'Lexend Tera', sans-serif;
   font-weight: 700;
-  font-size: 1.875em;
+  font-size: 4.5em;
 }
 
 h2 {
-  color:#CAC691;
+  font-family: 'Lekton', sans-serif;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 3.75em;
 }
 
 h3 {
-  color:#CAC691;
-  font-size: 1.25em;
+  font-size: 2em;
 }
 
 
 h4 {
-  color: #CAC691;
-	font-size: .75em;
+  font-size: 1.5em;
 }
 
 p {
-  color:#CAC691;
-	font-size: 1rem;
-	line-height: 36px; 
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #EEEFDA;
+  font-family: 'Lekton', sans-serif;
+  font-weight: 400;
 }
 /* ---------------------------- Mobile Styles -----------------------*/
 
@@ -194,26 +203,22 @@ header nav ul li a {
   background-color: #CAC691;
   padding: .75em .75em;
   border-radius: 30px;
-  color:#152A3E;
+  color: #152A3E;
 }
 
 header h1 {
   width: 100%;
-  font-family: 'Lexend Tera', sans-serif;
-  font-size: 4.5em;
   color: #EEEFDA;
 }
 
 header h2 {
   width: 100%;
-  font-family: 'Lekton', sans-serif;
-  ;
-  font-size: 3.75em;
   color: #EEEFDA;
 }
 
 /*-------- Main Styles ----------*/
 
+/*------- Projects Section ------- */
 #projects {
   display: flex;
   justify-content: center;
@@ -224,18 +229,6 @@ header h2 {
 }
 
 #projects h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
-  color: #152A3E;
-}
-
-#projects h4 {
-  color: #152A3E;
-}
-
-#projects p {
   color: #152A3E;
 }
 
@@ -249,20 +242,40 @@ header h2 {
 }
 
 #projects .content-wrapper .showcase article {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
   margin: 20px 0;
-  padding: 0 10px;
+  padding: 10px 10px;
   width: 50%;
   /*background: green;*/
 }
 
-#projects .content-wrapper .showcase article img {
-  margin: 20px;
+
+#projects img {   
+  border: 5px solid #152A3E;
 }
 
+#projects h4 {
+  color: #152A3E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#projects p {
+  color: #152A3E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 50%;
+  border-radius: 30px;
+  padding: 5px;
+  background: #152A3E;
+}
+
+/*------------ Skills Section -------------------*/
 .skills-bold {
   font-weight: 700;
   padding: 5px;
@@ -293,8 +306,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  font-size: 3em;
-  color: #CAC691;
+  color: #EEEFDA;
 }
 
 #skills h3 {
@@ -303,8 +315,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  color: #CAC691;
-  font-size: 2rem;
+  color: #EEEFDA;
 }
 
 #skills .content-wrapper .skill-list article {
@@ -334,11 +345,12 @@ header h2 {
 
 .tech-box {
   width: 90%;
-  background: #F7E8E8;
+  background: #EEEFDA;
   padding: 20px 100px;
   margin: 0 0 20px 0;
 }
 
+/*----- About Section --------- */
 #about {
   width: 100%;
   display: flex;
@@ -356,6 +368,20 @@ header h2 {
   /*background: white;*/
 }
 
+.author-photo {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*background: green;*/
+}
+
+.author-photo img {
+  width: 90%;
+  border-radius: 50%;
+  padding: 50px;
+}
+
 .author-info {
   width: 90%;
   display: flex;
@@ -371,7 +397,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  color:#152A3E;
+  color: #152A3E;
   /*background: blue;*/
 }
 
@@ -381,7 +407,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  color:#152A3E;
+  color: #152A3E;
   /*background: yellow;*/
 }
 
@@ -427,6 +453,7 @@ header h2 {
   display: flex;
   justify-content: center;
   text-align: center;
+  color: #EEEFDA;
   /*background: yellow;*/
 }
 
@@ -436,7 +463,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: darkblue;*/
+  /*background: white;*/
 }
 
 .contact-info {
@@ -445,6 +472,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  padding: 20px;
   /*background: green;*/
 }
 
@@ -454,7 +482,8 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: white;*/
+  color: #EEEFDA;
+  /*background: pink;*/
 }
 
 .contact-info p {
@@ -463,6 +492,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  color: #EEEFDA;
   /*background: yellow;*/
 }
 
@@ -472,11 +502,13 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  padding: 30px;
   /*background: hotpink;*/
 }
 
 .follow-me {
   width: 100%;
+  color: #EEEFDA;
   /*background: lightgrey;*/
 }
 
@@ -494,20 +526,36 @@ header h2 {
   justify-content: center;
   text-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
   /*background: lightsalmon;*/
 }
 
 .social-icons ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
   width: 100%;
-  /*background: lightgreen;*/
+  /*background: yellow;*/
+}
+
+.social-icons ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2.125em;
+  color: #EEEFDA;
+  /*background: green;*/
 }
 
 .location {
   width: 90%;
   display: flex;
-  justify-content: center;
-  text-align: center;
   flex-flow: row wrap;
+  padding: 30px;
   /*background: plum;*/
 }
 
@@ -517,6 +565,7 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  color: #EEEFDA;
   /*background: lightseagreen;*/
 }
 
@@ -525,7 +574,6 @@ header h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-flow: row wrap;
   /*background: white;*/
 }
 
@@ -534,7 +582,7 @@ header h2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-flow: row wrap;
+  color: #EEEFDA;
   /*background: yellow;*/
 }
 
@@ -544,10 +592,95 @@ header h2 {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
+  color: #EEEFDA;
+  padding: 30px;
   margin: 60px 0 0 0;
   /*background: purple;*/
 }
 
+
+
+/*------------- Tablet Media Queries -------------------- */
+@media all and (min-width: 768px) {
+
+  #projects .content-wrapper .showcase article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    margin: 20px 0;
+    padding: 10px 10px;
+    width: 33%;
+    /*background: purple;*/
+  }
+
+  .skill-list {
+    padding: 50px;
+    /*background: yellow;*/
+
+  }
+
+  #skills .content-wrapper .skill-list article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    /*background: pink;*/
+  }
+
+  .author-photo {
+    width: 50%;
+  }
+
+  #contact .content-wrapper {
+    width: 100%;
+  }
+
+  .connect-with-me {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-flow: row;
+    /*background: blue;*/
+  }
+
+  .contact-info {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    padding: 20px;
+    /*background: green;*/
+  }
+
+  .social-info {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    padding: 20px;
+    /*background: hotpink;*/
+  }
+
+  .location {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    /*background: plum;*/
+  }
+}
+
+/*------------------------------------------------------- */
+
+/*----------------- Desktop Media Queries --------------- */
+@media all and (min-width: 1200px) {}
+
+/*------------------------------------------------------- */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
