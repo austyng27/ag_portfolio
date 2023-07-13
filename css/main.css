@@ -118,7 +118,7 @@ h1 {
 h2 {
   font-family: 'Lekton', sans-serif;
   font-weight: 400;
-  font-size: 3.75em;
+  font-size: 2.75em;
 }
 
 h3 {
@@ -145,7 +145,7 @@ a {
   font-family: 'Lekton', sans-serif;
   font-weight: 400;
 }
-/* ---------------------------- Mobile Styles -----------------------*/
+/* ---------------------------- Main Styles -----------------------*/
 
 /*---Header Styles ----*/
 header {
@@ -212,11 +212,9 @@ header h1 {
 }
 
 header h2 {
-  width: 100%;
+  width: 90%;
   color: #EEEFDA;
 }
-
-/*-------- Main Styles ----------*/
 
 /*------- Projects Section ------- */
 #projects {
@@ -248,8 +246,13 @@ header h2 {
   /*background: green;*/
 }
 
-
-#projects img {   
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects img {
+  object-fit: fill;
   border: 5px solid #152A3E;
 }
 
@@ -309,6 +312,14 @@ button {
   color: #EEEFDA;
 }
 
+.list-wrapper{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;
+}
+
 #skills h3 {
   width: 100%;
   display: flex;
@@ -317,36 +328,30 @@ button {
   flex-flow: row wrap;
   color: #EEEFDA;
 }
-
-#skills .content-wrapper .skill-list article {
+#skills .content-wrapper .skill-list{
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: blue;*/
-  color: #152A3E;
-  font-size: 1.5em;
-  font-weight: 700;
 }
-
-
-#skills .content-wrapper .tool-list article {
-  width: 100%;
+#skills .content-wrapper .skill-list article {
+  width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: blue;*/
+  padding: 10px;
   color: #152A3E;
   font-size: 1.5em;
   font-weight: 700;
+  /*background: lightblue;*/
 }
 
 .tech-box {
-  width: 90%;
+  width: 30%;
   background: #EEEFDA;
-  padding: 20px 100px;
+  padding: 20px 90px;
   margin: 0 0 20px 0;
 }
 
@@ -388,7 +393,7 @@ button {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: green;*/
+  /*background: yellow;*/
 }
 
 .author-info h2 {
@@ -614,11 +619,14 @@ button {
     /*background: purple;*/
   }
 
-  .skill-list {
-    padding: 50px;
-    /*background: yellow;*/
-
-  }
+  .list-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    /*background: lightseagreen;*/
+    }
 
   #skills .content-wrapper .skill-list article {
     width: 100%;
@@ -653,7 +661,7 @@ button {
     text-align: center;
     flex-flow: row wrap;
     padding: 20px;
-    /*background: green;*/
+    /*background: lightgreen;*/
   }
 
   .social-info {
@@ -678,8 +686,25 @@ button {
 /*------------------------------------------------------- */
 
 /*----------------- Desktop Media Queries --------------- */
-@media all and (min-width: 1200px) {}
+@media all and (min-width: 1200px) {
 
+  .author-photo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*background: pink;*/
+}
+
+.author-info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  /*background: lightcoral;*/
+}
+}
 /*------------------------------------------------------- */
 /* ==========================================================================
    Helper classes
