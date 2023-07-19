@@ -190,7 +190,7 @@ header nav ul li {
 
 header nav ul li a {
   padding: 0 20px;
-  font-size: 1.125em;
+  font-size: .75em;
   font-weight: 400;
   text-transform: capitalize;
   text-decoration: none;
@@ -200,7 +200,7 @@ header nav ul li a {
 
 #contact-button {
   background-color: #CAC691;
-  padding: .75em .75em;
+  padding: .5em .5em;
   border-radius: 30px;
   color: #152A3E;
 }
@@ -339,7 +339,7 @@ flex-flow: row wrap;
   flex-flow: row wrap;
   padding: 10px;
   color: #152A3E;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 700;
   /*background: lightblue;*/
 }
@@ -597,6 +597,10 @@ flex-flow: row wrap;
 
 /*------------- Tablet Media Queries -------------------- */
 @media all and (min-width: 768px) {
+
+  header nav ul li a {
+    font-size: 1.25em;
+  }
 
   #projects .content-wrapper .showcase article {
     display: flex;
