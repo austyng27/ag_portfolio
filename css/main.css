@@ -172,7 +172,6 @@ header nav {
 }
 
 header nav ul {
-  width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -266,9 +265,6 @@ figure{
 
 #projects p {
   color: #152A3E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -493,9 +489,6 @@ flex-flow: row wrap;
 
 .contact-info p {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   flex-flow: row wrap;
   color: #EEEFDA;
   /*background: yellow;*/
@@ -537,10 +530,7 @@ flex-flow: row wrap;
 }
 
 .social-icons ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 20px;
+  margin: 0 20px;
   width: 100%;
   /*background: yellow;*/
 }
@@ -634,6 +624,7 @@ flex-flow: row wrap;
     justify-content: center;
     text-align: center;
     flex-flow: row wrap;
+    font-size: 1.25em;
     /*background: pink;*/
   }
 
@@ -666,10 +657,6 @@ flex-flow: row wrap;
 
   .social-info {
     width: 30%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-flow: row wrap;
     padding: 20px;
     /*background: hotpink;*/
   }
