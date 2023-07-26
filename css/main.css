@@ -93,6 +93,7 @@ font-family: 'Lexend Tera', sans-serif; */
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -162,13 +163,11 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   text-align: center;
-  /*background: blue;*/
 }
 
 header nav {
   width: 100%;
   padding: 1.875em 0;
-  /*background: yellow;*/
 }
 
 header nav ul {
@@ -178,13 +177,11 @@ header nav ul {
   margin: 0 1.875em;
   padding: 0;
   list-style: none;
-  /*background: lightpink;*/
 
 }
 
 header nav ul li {
   width: 90%;
-  /*background: lightgreen;*/
 }
 
 
@@ -195,7 +192,6 @@ header nav ul li a {
   text-transform: capitalize;
   text-decoration: none;
   color: #EEEFDA;
-  /*background: hotpink;*/
 }
 
 #contact-button {
@@ -222,7 +218,6 @@ header h2 {
   text-align: center;
   width: 100%;
   margin: 80px 0;
-  /*background: red;*/
 }
 
 #projects h2 {
@@ -235,14 +230,12 @@ header h2 {
   text-align: center;
   flex-flow: row wrap;
   width: 100%;
-  /*background: yellow;*/
 }
 
 #projects .content-wrapper .showcase article {
   margin: 20px 0;
   padding: 10px 10px;
   width: 50%;
-  /*background: green;*/
 }
 
 figure{
@@ -250,6 +243,7 @@ figure{
   justify-content: center;
   align-items: center;
 }
+
 #projects img {
   object-fit: fill;
   border: 5px solid #152A3E;
@@ -264,13 +258,14 @@ figure{
 }
 
 #projects p {
+  text-align: left;
   color: #152A3E;
 }
 
-button {
+.live-page-button {
   width: 50%;
   border-radius: 30px;
-  padding: 5px;
+  padding: 10px;
   background: #152A3E;
 }
 
@@ -296,7 +291,6 @@ button {
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: green;*/
 }
 
 #skills h2 {
@@ -341,7 +335,6 @@ flex-flow: row wrap;
   color: #152A3E;
   font-size: 1.25em;
   font-weight: 700;
-  /*background: lightblue;*/
 }
 
 .tech-box {
@@ -366,7 +359,6 @@ flex-flow: row wrap;
   display: flex;
   justify-content: center;
   text-align: center;
-  /*background: white;*/
 }
 
 .author-photo {
@@ -374,7 +366,6 @@ flex-flow: row wrap;
   display: flex;
   justify-content: center;
   text-align: center;
-  /*background: green;*/
 }
 
 .author-photo img {
@@ -389,7 +380,6 @@ flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: yellow;*/
 }
 
 .author-info h2 {
@@ -399,7 +389,6 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   color: #152A3E;
-  /*background: blue;*/
 }
 
 .author-info h3 {
@@ -409,7 +398,6 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   color: #152A3E;
-  /*background: yellow;*/
 }
 
 .info-paragraph {
@@ -418,7 +406,6 @@ flex-flow: row wrap;
   padding: 0 0 0 10px;
   display: block;
   text-align: left;
-  /*background: yellow;*/
 }
 
 .info-paragraph p {
@@ -446,7 +433,6 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   padding: 0 0 60px 0;
-  /*background: lightgreen;*/
 }
 
 #contact h2 {
@@ -455,7 +441,6 @@ flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   color: #EEEFDA;
-  /*background: yellow;*/
 }
 
 .connect-with-me {
@@ -464,7 +449,6 @@ flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: white;*/
 }
 
 .contact-info {
@@ -474,7 +458,6 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   padding: 20px;
-  /*background: green;*/
 }
 
 .hire-me {
@@ -484,14 +467,12 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   color: #EEEFDA;
-  /*background: pink;*/
 }
 
 .contact-info p {
   width: 100%;
   flex-flow: row wrap;
   color: #EEEFDA;
-  /*background: yellow;*/
 }
 
 .social-info {
@@ -501,13 +482,11 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   padding: 30px;
-  /*background: hotpink;*/
 }
 
 .follow-me {
   width: 100%;
   color: #EEEFDA;
-  /*background: lightgrey;*/
 }
 
 .social-icons {
@@ -515,7 +494,6 @@ flex-flow: row wrap;
   display: flex;
   justify-content: center;
   text-align: center;
-  /*background: lightskyblue;*/
 }
 
 .social-icons ul {
@@ -526,13 +504,11 @@ flex-flow: row wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  /*background: lightsalmon;*/
 }
 
 .social-icons ul li {
   margin: 0 20px;
   width: 100%;
-  /*background: yellow;*/
 }
 
 .social-icons ul li a {
@@ -543,7 +519,6 @@ flex-flow: row wrap;
   padding: 0;
   font-size: 2.125em;
   color: #EEEFDA;
-  /*background: green;*/
 }
 
 .location {
@@ -551,7 +526,6 @@ flex-flow: row wrap;
   display: flex;
   flex-flow: row wrap;
   padding: 30px;
-  /*background: plum;*/
 }
 
 .meet-me {
@@ -561,7 +535,6 @@ flex-flow: row wrap;
   text-align: center;
   flex-flow: row wrap;
   color: #EEEFDA;
-  /*background: lightseagreen;*/
 }
 
 .city {
@@ -569,7 +542,6 @@ flex-flow: row wrap;
   display: flex;
   justify-content: center;
   text-align: center;
-  /*background: white;*/
 }
 
 .city p {
@@ -578,7 +550,6 @@ flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   color: #EEEFDA;
-  /*background: yellow;*/
 }
 
 .copywrite {
@@ -590,7 +561,6 @@ flex-flow: row wrap;
   color: #EEEFDA;
   padding: 30px;
   margin: 60px 0 0 0;
-  /*background: purple;*/
 }
 
 
@@ -610,7 +580,6 @@ flex-flow: row wrap;
     margin: 20px 0;
     padding: 10px 10px;
     width: 33%;
-    /*background: purple;*/
   }
 
   .list-wrapper{
@@ -619,7 +588,6 @@ flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    /*background: lightseagreen;*/
     }
 
   #skills .content-wrapper .skill-list article {
@@ -629,7 +597,6 @@ flex-flow: row wrap;
     text-align: center;
     flex-flow: row wrap;
     font-size: 1.25em;
-    /*background: pink;*/
   }
 
   .author-photo {
@@ -646,7 +613,6 @@ flex-flow: row wrap;
     justify-content: space-evenly;
     text-align: center;
     flex-flow: row;
-    /*background: blue;*/
   }
 
   .contact-info {
@@ -656,13 +622,11 @@ flex-flow: row wrap;
     text-align: center;
     flex-flow: row wrap;
     padding: 20px;
-    /*background: lightgreen;*/
   }
 
   .social-info {
     width: 30%;
     padding: 20px;
-    /*background: hotpink;*/
   }
 
   .location {
@@ -670,7 +634,6 @@ flex-flow: row wrap;
     display: flex;
     flex-flow: row wrap;
     padding: 20px;
-    /*background: plum;*/
   }
 }
 
@@ -684,7 +647,6 @@ flex-flow: row wrap;
     display: flex;
     justify-content: center;
     text-align: center;
-    /*background: pink;*/
 }
 
 .author-info {
@@ -693,10 +655,10 @@ flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-  /*background: lightcoral;*/
 }
 }
 /*------------------------------------------------------- */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
