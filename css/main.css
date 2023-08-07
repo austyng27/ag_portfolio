@@ -227,24 +227,19 @@ header h2 {
 #projects .content-wrapper .showcase {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   flex-flow: row wrap;
   width: 100%;
 }
 
 #projects .content-wrapper .showcase article {
-  margin: 20px 0;
-  padding: 10px 10px;
-  width: 50%;
-}
-
-figure{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
 #projects img {
+  width: 16em;
+  height: 16em;
   object-fit: fill;
   border: 5px solid #152A3E;
 }
@@ -258,8 +253,13 @@ figure{
 }
 
 #projects p {
+  width: 100%;
   text-align: left;
   color: #152A3E;
+}
+
+.skills-bold {
+  font-weight: 700;
 }
 
 .live-page-button {
@@ -270,10 +270,6 @@ figure{
 }
 
 /*------------ Skills Section -------------------*/
-.skills-bold {
-  font-weight: 700;
-  padding: 5px;
-}
 
 #skills {
   width: 100%;
@@ -310,14 +306,6 @@ align-items: center;
 flex-flow: row wrap;
 }
 
-#skills h3 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
-  color: #EEEFDA;
-}
 #skills .content-wrapper .skill-list{
   width: 100%;
   display: flex;
@@ -326,7 +314,7 @@ flex-flow: row wrap;
   flex-flow: row wrap;
 }
 #skills .content-wrapper .skill-list article {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -334,13 +322,13 @@ flex-flow: row wrap;
   padding: 10px;
   color: #152A3E;
   font-size: 1.25em;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .tech-box {
-  width: 30%;
+  width: 60%;
   background: #EEEFDA;
-  padding: 20px 90px;
+  padding: 20px;
   margin: 0 0 20px 0;
 }
 
@@ -575,7 +563,6 @@ flex-flow: row wrap;
   #projects .content-wrapper .showcase article {
     display: flex;
     justify-content: center;
-    text-align: center;
     flex-flow: row wrap;
     margin: 20px 0;
     padding: 10px 10px;
@@ -596,7 +583,7 @@ flex-flow: row wrap;
     justify-content: center;
     text-align: center;
     flex-flow: row wrap;
-    font-size: 1.25em;
+    font-size: 1.15em;
   }
 
   .author-photo {
