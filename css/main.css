@@ -238,8 +238,8 @@ header h2 {
 }
 
 #projects img {
-  width: 16em;
-  height: 16em;
+  width: 12em;
+  height: 12em;
   object-fit: fill;
   border: 5px solid #152A3E;
 }
