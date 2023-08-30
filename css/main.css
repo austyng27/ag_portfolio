@@ -227,19 +227,18 @@ header h2 {
 #projects .content-wrapper .showcase {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   width: 100%;
 }
 
-#projects .content-wrapper .showcase article {
-  width: 100%;
-  padding: 20px;
+article{
+  margin: 2.5em;
 }
 
 #projects img {
-  width: 12em;
-  height: 12em;
+  width: 14em;
+  height: 14em;
   object-fit: fill;
   border: 5px solid #152A3E;
 }
@@ -248,7 +247,6 @@ header h2 {
   color: #152A3E;
   display: flex;
   justify-content: center;
-  align-items: center;
   
 }
 
@@ -258,12 +256,12 @@ header h2 {
   color: #152A3E;
 }
 
+
 .skills-bold {
   font-weight: 700;
 }
 
 .live-page-button {
-  width: 50%;
   border-radius: 30px;
   padding: 10px;
   background: #152A3E;
@@ -323,6 +321,7 @@ flex-flow: row wrap;
   color: #152A3E;
   font-size: 1.25em;
   font-weight: 800;
+  margin: 0;
 }
 
 .tech-box {
@@ -564,8 +563,8 @@ flex-flow: row wrap;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    margin: 20px 0;
-    padding: 10px 10px;
+    margin: 1.25em 0;
+    padding: 2.5em 3.125em;
     width: 33%;
   }
 
@@ -629,7 +628,7 @@ flex-flow: row wrap;
 /*----------------- Desktop Media Queries --------------- */
 @media all and (min-width: 1200px) {
 
-  .author-photo {
+.author-photo {
     width: 50%;
     display: flex;
     justify-content: center;
